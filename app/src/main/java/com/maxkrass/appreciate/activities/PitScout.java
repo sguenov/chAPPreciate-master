@@ -362,35 +362,37 @@ public class PitScout extends ActionBarActivity implements View.OnClickListener,
             Log.e("Tim2", String.valueOf(listTest.size()));
             PitRecord record = new PitRecord();
 
-            record.setAbilitiesComment(abilitiesComment.getText().toString());
-            record.setAutoComment(autoComment.getText().toString());
-            record.setWheelNumSpinner(wheelNumSpinner.getSelectedItemPosition());
-            record.setAutoComment(autoComment.getText().toString());
-            record.setMainComment(mainComment.getText().toString());
+			record.setAbilitiesComment(abilitiesComment.getText().toString());
+			record.setAutoComment(autoComment.getText().toString());
+			record.setWheelNumSpinner(wheelNumSpinner.getSelectedItemPosition());
+			record.setMainComment(mainComment.getText().toString());
+			record.setTeleComment(teleComment.getText().toString());
 
 
-            record.setCoopAbilityCBW(coopAbilityCBW.isChecked());
-            record.setAutoZoneAutoCBW(autoZoneAutoCBW.isChecked());
-            record.setContainersAbilityCBW(containersAbilityCBW.isChecked());
-            record.setNarrowTeleCBW(narrowTeleCBW.isChecked());
-            record.setNoodlesAbilityCBW(noodlesAbilityCBW.isChecked());
-            record.setFlexibleAutoCBW(flexibleAutoCBW.isChecked());
-            record.setWideTeleCBW(wideTeleCBW.isChecked());
-            record.setHumanPlayerTeleCBW(humanPlayerTeleCBW.isChecked());
-            record.setLandfillTeleCBW(landfillTeleCBW.isChecked());
-            record.setFlexibleAutoCBW(flexibleAutoCBW.isChecked());
-            record.setContainersAutoCBW(containersAutoCBW.isChecked());
+			record.setCoopAbilityCBW(coopAbilityCBW.isChecked());
+			record.setAutoZoneAutoCBW(autoZoneAutoCBW.isChecked());
+			record.setContainersAbilityCBW(containersAbilityCBW.isChecked());
+			record.setNarrowTeleCBW(narrowTeleCBW.isChecked());
+			record.setNoodlesAbilityCBW(noodlesAbilityCBW.isChecked());
+			record.setFlexibleAutoCBW(flexibleAutoCBW.isChecked());
+			record.setWideTeleCBW(wideTeleCBW.isChecked());
+			record.setHumanPlayerTeleCBW(humanPlayerTeleCBW.isChecked());
+			record.setLandfillTeleCBW(landfillTeleCBW.isChecked());
+			record.setContainersAutoCBW(containersAutoCBW.isChecked());
+			record.setShiftingAbilityCBW(shiftingAbilityCBW.isChecked());
+			record.setStepTeleCBW(stepTeleCBW.isChecked());
+			record.setTotesAbilityCBW(totesAbilityCBW.isChecked());
+			record.setTotesAutoCBW(totesAutoCBW.isChecked());
 
+			record.setCimNumSpinner(cimNumSpinner.getSelectedItemPosition());
+			record.setDriveSpinner(driveSpinner.getSelectedItemPosition());
+			record.setHighestPossibleStackSpinner(highestPossibleStackSpinner.getSelectedItemPosition());
+			record.setWheelTypeSpinner(wheelTypeSpinner.getSelectedItemPosition());
+			record.setWheelNumSpinner(wheelNumSpinner.getSelectedItemPosition());
+			record.setMaxSpeed(maxSpeed.getSelectedItemPosition());
 
-            record.setCimNumSpinner(cimNumSpinner.getSelectedItemPosition());
-            record.setDriveSpinner(driveSpinner.getSelectedItemPosition());
-            record.setHighestPossibleStackSpinner(highestPossibleStackSpinner.getSelectedItemPosition());
-            record.setWheelTypeSpinner(wheelTypeSpinner.getSelectedItemPosition());
-            record.setMaxSpeed(maxSpeed.getSelectedItemPosition());
-
-            record.setTeamName(teamName.getText().toString());
-            record.setTeamNumber(teamNumber.getText().toString());
-
+			record.setTeamName(teamName.getText().toString());
+			record.setTeamNumber(teamNumber.getText().toString());
             record.save();
             finish();
 
